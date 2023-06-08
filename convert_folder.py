@@ -54,7 +54,7 @@ def convert_labelmes_to_yolo(labelme_folder, output_folder):
 
 def split_data(output_folder, dataset_folder):
     random.seed(0)
-    split_rate = 0.1
+    split_rate = 0.2 #验证集占比
     origin_label_path = os.path.join(output_folder, "labels")
     origin_image_path = os.path.join(output_folder, "images")
     train_label_path = os.path.join(dataset_folder, "train", "labels")
