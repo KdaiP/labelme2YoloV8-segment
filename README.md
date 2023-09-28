@@ -6,7 +6,7 @@
 
 ## 使用
 
-请先确保所有数据集图片和labelme标注文件都存放在一个文件夹内，脚本根据文件名对图片-标注进行匹配。
+请先确保所有数据集图片和labelme标注文件都存放在一个文件夹内。脚本根据文件名对图片-标注进行匹配。
 
 ```shell
 python convert_folder.py 待转换的文件夹 输出文件夹 训练集占比
@@ -44,9 +44,9 @@ if __name__ == '__main__':
 * YOLOV8找不到训练集和测试集文件
 
 YOLOV8在查找路径时，会将三个路径拼接到一起：
-- setting中的datasets_dir
-- 数据集yaml中的path
-- 数据集yaml中的train、value
+setting中的datasets_dir
+数据集yaml中的path
+数据集yaml中的train、value
 
 可以通过以下方式来修改 datasets_dir：
 ```python
