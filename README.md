@@ -41,12 +41,12 @@ if __name__ == '__main__':
 
 ## 疑难解答
 
-* YOLOV8找不到训练集和测试集文件
+YOLOV8找不到训练集和测试集文件
 
 YOLOV8在查找路径时，会将三个路径拼接到一起：
-setting中的datasets_dir
-数据集yaml中的path
-数据集yaml中的train、value
+- setting中的datasets_dir
+- 数据集yaml中的path
+- 数据集yaml中的train、value
 
 可以通过以下方式来修改 datasets_dir：
 ```python
